@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.NavbarItems{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar-logo {
+    color: white;
+    justify-self: start;
+    width: 50vh;
+    padding-left: 2rem;
+}
+
+.fab.fa-react{
+    padding-left: 0.5rem;
+}
+
+.nav-items {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    padding-right: 5%;
+    justify-content: end;
+    color: white;
+}
+
+.nav-links {
+    padding-left: 1em;
+    color: white;
+    text-decoration: none;
+}
+
