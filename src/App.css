@@ -47,3 +47,34 @@
     padding-left: 1em;
 }
 
+
+.Producto {
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+}
+.Contador {
+    display: flex;
+}
+
+.Contador p {
+    width: 2em;
+    font-size: 1em;
+    padding-top: 0.2em;
+    text-align: center;
+}
+
+.Contador button {
+    padding: 0.2em 0.6em 0.3em 0.6em;
+    border-radius: 40%;
+    border-color: grey;
+}
+
+.AgregarCarrito {
+    margin-top: 0.5em;
+    padding: 0.2em 0.6em 0.3em 0.6em;
+    border-radius: 1em;
+    border-color: grey;
+}
