@@ -52,7 +52,7 @@
     margin-top: 0.5em;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 8em;
     align-items: center;
 }
 .Contador {
@@ -78,3 +78,21 @@
     border-radius: 1em;
     border-color: grey;
 }
+
+.ItemCard {
+    background-color: cadetblue;
+    width: 8em;
+}
+
+.ItemCard h3 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.ItemCard img {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
