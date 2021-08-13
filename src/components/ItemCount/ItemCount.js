@@ -6,21 +6,28 @@ const ItemCount = ( { stockInit, initial } ) => {
     const [stock] = useState(stockInit)
 
 
-    const sumar = () => setContador(Number(contador) +1);
+    const sumar = () => {
+        if (Number(contador) > Number(stock) - 1) {
+            alert("No tenemos más stock que eso");
+            return;
+        }
+        else {
+            setContador(Number(contador) + 1);
+        }
+    }
 
-    const restar = () => setContador(Number(contador) -1);
+    const restar = () => {
+        if (Number(contador) === 1) {
+            alert("El mínimo de compra es 1");
+            setContador(1);
+            return;
+        }
+        else {
+            setContador(Number(contador) - 1);
+        }
+    }
 
     const onAdd = () => {
-        if (Number(contador) > Number(stock)){
-            alert("No tenemos esa cantidad");
-            setContador(Number(stock));
-            return
-        }
-        else if (Number(contador) < 0){
-            alert("No puedes hacer eso");
-            setContador(0);
-            return
-        }
         alert("Se ha añadido al carrito");
     };
 
