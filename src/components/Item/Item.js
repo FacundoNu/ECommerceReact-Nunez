@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ItemCount from '../ItemCount/ItemCount';
+import ItemDetail from '../ItemDetail/ItemDetail';
 
-const Item = ({id, title, price, pictureUrl, stock}) => {
+
+const Item = ( {item} ) => {
+    const {id, title, stock, description, pictureUrl, price} = item;
+    const [showDetails, setShowDetails] = useState(false);
+
     return(
         <div className="ItemCard">
             <h3>{title}</h3>
-            <img url={pictureUrl} alt={title}></img>
-            <p>$ {price}</p>
-            <ItemCount stockInit={stock} initial='1'/>
+            <button onClick={() => setShowDetails(!showDetails)}>Detalles</button>
+            {showDetails && <ItemDetail img={pictureUrl} desc={description} price={price}/>}
+            <ItemCount stockInit={stock} initial={1}/>
         </div>
     )
 }

@@ -7,23 +7,23 @@ const ItemCount = ( { stockInit, initial } ) => {
 
 
     const sumar = () => {
-        if (Number(contador) > Number(stock) - 1) {
+        if (contador > stock - 1) {
             alert("No tenemos más stock que eso");
             return;
         }
         else {
-            setContador(Number(contador) + 1);
+            setContador(contador + 1);
         }
     }
 
     const restar = () => {
-        if (Number(contador) === 1) {
+        if (contador === 1) {
             alert("El mínimo de compra es 1");
             setContador(1);
             return;
         }
         else {
-            setContador(Number(contador) - 1);
+            setContador(contador - 1);
         }
     }
 

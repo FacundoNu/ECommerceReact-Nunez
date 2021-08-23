@@ -89,9 +89,13 @@
 }
 
 .ItemCard {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(90deg, rgb(118, 105, 235) 0%, rgb(164, 159, 243) 100%);
     width: 10em;
     border-radius: 3%;
+    justify-content: center;
+    
 }
 
 .ItemCard h3 {
@@ -99,14 +103,24 @@
     font-size: 25px;
 }
 
+.ItemCard button {
+    text-align: center;
+    border-radius: 1em;
+}
+
 .ItemCard img {
     text-align: center;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
-.ItemCard>p {
-    font-size: 1.5em;
+.ItemCard>.ItemDetail>h4 {
+    text-align: center;
+}
+
+.ItemCard>.ItemDetail>p {
+    font-size: 1.2em;
     text-align: center;
 }
 
